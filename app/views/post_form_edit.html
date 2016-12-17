@@ -1,0 +1,22 @@
+<div class="row">
+    <h4>{{ title }}</h1>
+    <form class="col s12" ng-submit="savePostEdit()">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="last_name" type="text" class="validate" ng-model="post.title">
+          <label for="last_name" class="active">title</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea" ng-model="post.body"></textarea>
+          <label for="last_name" class="active">description</label>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        </button>
+        <a href="/" class="btn orange lighten-3">Regresar</a>
+      </div>
+    </form>
+  </div>
